@@ -409,6 +409,7 @@
             "label": "Scroll Lock",
             "aliases": [
                 "KC_SCRL",
+                "KC_SLCK",
                 "KC_BRMD"
             ]
         },
@@ -492,7 +493,8 @@
             "key": "KC_NUM_LOCK",
             "label": "Num Lock",
             "aliases": [
-                "KC_NUM"
+                "KC_NUM",
+                "KC_NLCK"
             ]
         },
         "0x0054": {
