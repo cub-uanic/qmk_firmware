@@ -2,7 +2,7 @@
     "keyboard_name": "Pronesis - Kinesis Advantage Promicrofied",
     "manufacturer": "TQMK/Cub",
     "maintainer": "Oleh Kostiuk",
-    "url": "https://qmk.fm/keyboards/",
+    "url": "https://github.com/cub-uanic/qmk_firmware",
     "development_board": "promicro",
     "usb": {
         "vid": "0xFEED",

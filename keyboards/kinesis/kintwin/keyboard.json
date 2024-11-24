@@ -1,5 +1,5 @@
 {
-    "development_board": "blackpill_f401",
+    "development_board": "blackpill_f411",
     "keyboard_name": "Kinesis",
     "url": "https://github.com/alvicstep/kintwin",
     "manufacturer": "https://github.com/alvicstep/kintwin",
@@ -9,8 +9,8 @@
         "vid": "0x4B53",
         "pid": "0x0001",
         "shared_endpoint": {
-            "keyboard": true   
-        } 
+            "keyboard": true
+        }
     },
     "features": {
         "bootmagic": true,
@@ -31,7 +31,7 @@
         "num_lock": "B4",
         "compose": "C13",
         "on_state": 0
-    },    
+    },
     "layouts": {
         "LAYOUT": {
             "layout": [
@@ -139,6 +139,6 @@
                 {"matrix": [5, 7], "x": 9.25, "y": 7, "h": 2},
                 {"matrix": [5, 6], "x": 10.25, "y": 7, "h": 2}
             ]
-        }    
-    }    
+        }
+    }
 }
