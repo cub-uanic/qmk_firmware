@@ -175,7 +175,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
              ___x___, ___x___, ___x___, ___x___,                            ___x___, ___x___, ___x___, ___x___,
                                            _______, _______,    _______, A0_FN27,
                                                     _______,    _______,
-                                  _______, _______, _______,    _______, _______, A0_FN30
+                                  _______, _______, A0_FN29,    _______, _______, A0_FN30
   ),
 
 
@@ -303,6 +303,16 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case CK_PSW4:
             if (record->event.pressed) {
                 SEND_STRING("vit\"" SS_DOWN(X_LSFT) "713" SS_UP(X_LSFT)"\n");
+            }
+            return false;
+
+        case MACLOCK:
+            if (record->event.pressed) {
+                SEND_STRING(
+                        SS_DELAY(1500) SS_LGUI(SS_LCTL("q"))
+                        SS_DELAY(100)  SS_TAP(X_ESC)
+                        SS_DELAY(500)  SS_TAP(X_ESC)
+                        SS_DELAY(500)  SS_TAP(X_ESC));
             }
             return false;
 
