@@ -28,6 +28,10 @@ enum custom_keycodes {
 };
 
 
+#define DELAY_SHORT     500
+#define DELAY_LONG      1500
+
+
 // Useful aliases
 #define NXT_LYR         _______
 #define xxxxxxx         XXXXXXX
@@ -311,10 +315,10 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case MACLOCK:
             if (record->event.pressed) {
                 SEND_STRING(
-                        SS_DELAY(1500) SS_LGUI(SS_LCTL("q"))
-                        SS_DELAY(100)  SS_TAP(X_ESC)
-                        SS_DELAY(500)  SS_TAP(X_ESC)
-                        SS_DELAY(500)  SS_TAP(X_ESC));
+                        SS_DELAY(DELAY_LONG)    SS_LGUI(SS_LCTL("q"))
+                        SS_DELAY(DELAY_SHORT)   SS_TAP(X_ESC)
+                        SS_DELAY(DELAY_SHORT)   SS_TAP(X_ESC)
+                        SS_DELAY(DELAY_SHORT)   SS_TAP(X_ESC));
             }
             return false;
 
